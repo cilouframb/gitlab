@@ -1,11 +1,11 @@
-Installer cmder
+-- Installer cmder
 
-Dans settings, on peut changer le répertoire de startup :
+Dans settings, on peut changer le repertoire de startup :
 Startup ->Tasks, choisir {cmd::Cmder} puis le boutin Startup dir
-et ajouter le répertoire de travail GitRepo
+et ajouter le repertoire de travail GitRepo
 
 
-Puis pour lier le Repo local à un repo distant :
+-- Puis pour rÃ©cupÃ©rer le repo distant dans un rÃ©pertoire local :
 
 C:\Users\framb\OneDrive\Documents\GitRepo
 ? git clone https://github.com/cilouframb/gitlab
@@ -31,7 +31,7 @@ C:\Users\framb\OneDrive\Documents\GitRepo\gitlab (master -> origin)
 ? git help
 
 
-créer une branche 
+-- creer une branche 
 C:\Users\framb\OneDrive\Documents\GitRepo\gitlab (master -> origin)
 ? git branch myFirstBranch
 
@@ -40,7 +40,7 @@ C:\Users\framb\OneDrive\Documents\GitRepo\gitlab (master -> origin)
 * master
   myFirstBranch
 
-qu'y a t'il d'ajouté de modifié dans ma branche ?
+-- qu'y a t'il d'ajoute de modifie dans ma branche ?
 C:\Users\framb\OneDrive\Documents\GitRepo\gitlab (myFirstBranch -> origin)
 ? git status
 On branch myFirstBranch
@@ -81,7 +81,7 @@ C:\Users\framb\OneDrive\Documents\GitRepo\gitlab (myFirstBranch -> origin)
  1 file changed, 31 insertions(+)
  create mode 100644 MyReadMe.txt
 
-pousser ma branche en remote :
+-- pousser ma branche en remote :
 C:\Users\framb\OneDrive\Documents\GitRepo\gitlab (myFirstBranch -> origin)
 ? git checkout master
 Switched to branch 'master'
@@ -111,7 +111,7 @@ To https://github.com/cilouframb/gitlab
  * [new branch]      myFirstBranch -> myFirstBranch
 
 
-merger ma branche à la master :
+-- merger ma branche a la master :
 
 C:\Users\framb\OneDrive\Documents\GitRepo\gitlab (myFirstBranch -> origin)          
 ? git checkout master                                                               
@@ -140,4 +140,12 @@ C:\Users\framb\OneDrive\Documents\GitRepo\gitlab (master -> origin)
 Total 0 (delta 0), reused 0 (delta 0)                                               
 To https://github.com/cilouframb/gitlab                                             
    6f33ab8..3ffeee2  master -> master                                               
-                                                                                    
+
+-- installer sourcetree
+https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-3.2.6.exe?_ga=2.1931505.1156383118.1574433893-1603121988.1574433893
+ suivre les steps tant qu'on peut 
+ bitbucket account : framb1112@hotmail.fr 
+- dans le menu Fichier --> ouvrir --> gitlab
+il va trouver tout seul le lien vers github dans les fichiers du projet
+
+On voit directement les branches dans l'onglet graphique
